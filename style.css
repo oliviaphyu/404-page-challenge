@@ -1,0 +1,142 @@
+:root{
+    --grey-1: #333333;
+    --grey-2: #4F4F4F;
+    --light-grey: #BDBDBD;
+
+    --Inconsolata:'Inconsolata', monospace; 
+    --SpaceMono:'Space Mono', monospace;
+    --Montserrat:'Montserrat', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    align-self: flex-start;
+    color: var(--grey-1);
+    margin-top: 2.5rem;
+    margin-left: 4.81rem;
+    font-family: var(--Inconsolata);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.12rem;
+    text-transform: uppercase;
+}
+
+.container{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container img{
+    width: 539.22px;
+    height: 447.43px;
+    /* top: 265px;
+    left: 77px; */
+    margin: 12.5rem 4.81rem;
+}
+
+.container .content h2{
+    font-family: var(--SpaceMono);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -0.14rem;
+    margin-bottom: 2.25rem;
+    color: var(--grey-1);
+    margin-right: 6rem;
+}
+
+.container .content p{
+    font-family: var(--SpaceMono);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -0.0525rem;
+    margin-bottom: 4rem;
+    color: var(--grey-2);
+    margin-right: 15rem;
+}
+
+.container .content button{
+    padding: 1.5rem 2.69rem;
+    font-family: var(--SpaceMono);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.03063rem;
+    border: none;
+    background: var(--grey-1);
+    color: #FFFFFF;
+    transition: all 200ms ease-in-out;
+}
+
+.container .content button:hover{
+    box-shadow: 3px 5px 13px -5px rgba(0,0,0,0.47);
+}
+
+.attribution{
+    margin: 2rem 0;
+}
+
+.attribution p{
+    text-align: center;
+    font-family: var(--Montserrat);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--light-grey);
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--light-grey);
+    font-weight: bold;
+    transition: all 200ms ease-in-out;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+    h1{
+        margin-left: 2rem;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img{
+        width: 286.83px;
+        height: 238px;
+        margin: 0;
+    }
+
+    .container .content{
+        margin-left: 2rem;
+    }
+
+    .container .content h2{
+        font-size: 3rem;
+        margin-bottom: 1.88rem;
+    }
+
+    .container .content p{
+        margin-right: 0;
+        font-size: 1.125rem;
+        margin-bottom: 4.12rem;
+    }
+}
